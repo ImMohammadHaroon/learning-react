@@ -1,16 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import './App.css';
-
+import "./App.css";
+import React from "react";
+import FoodItems from "./components/FoodItem";
+import ErrorMessage from "./ErrorMessage";
 
 function App() {
-  let foodItem = ["Salad" , "Milk" , "Beaf" , "Dall", "Green Vegitable", "Ghee"]
+  const foodItems = ["Salad", "Milk", "Beef", "Dal", "Green Vegetable", "Ghee"];
   return (
     <>
-      <h1>Healthy Food</h1>
-      {foodItem.map(item =>( <li key ={item}className="list-group-item">{item}</li>) )}
-        
+      <div className="p-3 mb-2 bg-dark-subtle text-dark-emphasis">
+        <ErrorMessage />
+        <FoodItems />
+      </div>
     </>
-   
   );
 }
 
