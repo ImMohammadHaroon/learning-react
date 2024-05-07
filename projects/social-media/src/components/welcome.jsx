@@ -8,3 +8,4 @@ const WelcomeMessage = ({omGetPostsClick}) => {
 }
 
 export default WelcomeMessage;
+ 
